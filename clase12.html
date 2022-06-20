@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;   
+                     
+        }
+
+        .product-detail{
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+        }
+        .primary-button {
+        background-color: var(--hospital-green);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+        }   
+        .product-detail > img:nth-child(1){
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            top: 20px;
+            left: 20px;
+            background-color: var(--white);
+            border-radius: 50%;
+        } 
+
+        .product-detail > img:nth-child(2){
+            width: 360px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .product-detail > img:nth-child(1):hover{
+            cursor:pointer;
+        }        
+        .add-to-card-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }   
+        .producto-info{
+            margin: 24px 24px 0 24px;
+        }  
+        .producto-info p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        .producto-info p:nth-child(2){
+            font-size: var(--md);
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: var(--very-light-pink);
+        }
+        .producto-info p:nth-child(3){
+            font-size: var(--sm);
+            margin-top: 0;
+            margin-bottom: 36px;
+            color: var(--very-light-pink);
+            text-align: justify;
+        }
+        @media (max-with:640px){
+            .product-detail{
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <aside class="product-detail">
+        <img src="./icons/icon_close.png" alt="">
+        <img src="https://images.pexels.com/photos/7857555/pexels-photo-7857555.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <div class="producto-info">
+            <p>$us 590.00</p>
+            <p>Personal Computer</p>
+            <p>
+                Si tienes una tienda física de venta de productos o servicios, la utilización de determinadas técnicas de venta en tienda te ayudan a alcanzar la máxima rentabilidad.            
+            </p>
+            <button class="primary-button add-to-card-button">
+                <img src="./icons/bt_add_to_cart.svg" alt="add to card">
+                Add to cart
+            </button>    
+        </div>
+    </aside>
+</body>
+</html>
